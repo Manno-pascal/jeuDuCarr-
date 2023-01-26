@@ -1,0 +1,17 @@
+.square{
+    background-color: red;
+    width: 10vw;
+    height: 10vh;
+    margin: 10px;
+}
+#board{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#refresh{
+    display: none;
+}
