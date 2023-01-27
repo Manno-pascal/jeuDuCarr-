@@ -10,21 +10,27 @@
 </head>
 
 <body>
+    <header>
+        <h1>Le jeu du carré!</h1>
+        <p> Cliques sur la couleur unique !</p>
+    </header>
     <main>
         <div id="board">
 
         </div>
-        <div id="pannel">
-            <label for="">Time :</label>
-            <input id="time" type="number" value="10">
-            <label for="">Difficulty :</label>
-            <input id="difficulty" type="number" value="3">
-            <button id="button" onclick="play()">Go !</button>
-        </div>
-        <p id="finalScore"></p>
-        <div id="refresh">
-            <button id="replay"><a href="index.html">Rejouer</a></button>
-            
+        <div id="informations">
+            <div id="pannel">
+                <label for="">Time :</label>
+                <input id="time" type="number" value="10">
+                <label for="">Difficulty :</label>
+                <input id="difficulty" type="number" value="3">
+                <button id="button" onclick="play()">Go !</button>
+            </div>
+            <p id="finalScore"></p>
+            <div id="refresh">
+                <button id="replay"><a href="index.html">Rejouer</a></button>
+
+            </div>
         </div>
     </main>
     <script src="./assets/script/script.js"></script>

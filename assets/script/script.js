@@ -1,4 +1,3 @@
-
 let board = document.querySelector("#board")
 let score = 0;
 let cells = []
@@ -13,7 +12,6 @@ function play() {
     pannel.style.display = 'none'
     let time = document.querySelector("#time").value
     let difficulty = document.querySelector("#difficulty").value
-    console.log(difficulty);
 
     for (let i = 0; i < difficulty; i++) {
 
@@ -32,14 +30,12 @@ function play() {
 function round() {
 firstColor = randomColor()
 secondColor = randomColor()
-    console.table(cells);
     for (let i = 0; i < cells.length; i++) {
         cells[i].style.backgroundColor = firstColor
     }
     let randomCell = randomNumber(0, (cells.length - 1))
     cells[randomCell].style.backgroundColor = secondColor
     secondColor = cells[randomCell].style.backgroundColor
-    console.log(score);
 }
 
 function clickOnSquare(elem) {
